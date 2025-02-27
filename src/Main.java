@@ -16,10 +16,24 @@ public class Main {
         double h = scanner.nextDouble();
 
         earth(m,h);
+
+        System.out.println("please enter the double number : ");
+        double x = scanner.nextDouble();
+        check(x);
     }
     public static void earth(double weight , double height){
         final double g = 9.8d ;
         double result = weight * height * g ;
         System.out.println("the Earth's gravitational potential energy is : " + result);
+    }
+    public static void check(double x){
+        if ( x == 0 ){
+            System.out.println(x);
+        } else if (x > 1000000) {
+            System.out.println("the number is positive and large ");
+        }
+        else {
+            System.out.println("the number is negative and small");
+        }
     }
 }
