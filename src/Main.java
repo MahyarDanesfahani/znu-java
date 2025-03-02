@@ -51,7 +51,7 @@ public class Main {
         System.out.println("the largest of number is : " + DataSet.getLargest(array));
         System.out.println("the average of numbers is : " + DataSet.getAverage(array));
         DataSet.getRange(array);
-        //E6.8
+        //E6.8 E6.9
         System.out.println("please enter the world : ");
         String world = scanner.nextLine();
         character(world);
@@ -238,6 +238,9 @@ public class Main {
         for (int i = 0; i < name.length(); i++) {
             System.out.println(show[i]);
         }
+        System.out.print("Reversed word: ");
+        for (int i = show.length - 1; i >= 0; i--) {
+            System.out.print(show[i]);
+        }
     }
-
 }
