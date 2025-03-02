@@ -212,11 +212,11 @@ public class Main {
                 replacedVowels.append(ch);
             }
         }
-        System.out.println("\na.Only the uppercase letters in the string : " + (uppercaseLetters.length() > 0 ? uppercaseLetters.toString() : "هیچ‌کدام"));
-        System.out.println("b.Every second letter of the string : " + (everySecondChar.length() > 0 ? everySecondChar.toString() : "هیچ‌کدام"));
+        System.out.println("\na.Only the uppercase letters in the string : " + (uppercaseLetters.length() > 0 ? uppercaseLetters.toString() : "nothing"));
+        System.out.println("b.Every second letter of the string : " + (everySecondChar.length() > 0 ? everySecondChar.toString() : "nothing"));
         System.out.println("c.the string, with all vowels replaced by an underscore : " + replacedVowels.toString());
         System.out.println("d.the number of vowels in the string : " + vowelCount);
-        System.out.println("e.the positions of all vowels in the string : " + (vowelPositions.length() > 0 ? vowelPositions.toString().trim() : "هیچ‌کدام"));
+        System.out.println("e.the positions of all vowels in the string : " + (vowelPositions.length() > 0 ? vowelPositions.toString().trim() : "nothing"));
     }
 
 }
