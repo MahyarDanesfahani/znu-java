@@ -51,6 +51,10 @@ public class Main {
         System.out.println("the largest of number is : " + DataSet.getLargest(array));
         System.out.println("the average of numbers is : " + DataSet.getAverage(array));
         DataSet.getRange(array);
+        //E6.8
+        System.out.println("please enter the world : ");
+        String world = scanner.nextLine();
+        character(world);
     }
     public static void earth(double weight , double height){
         final double g = 9.8d ;
@@ -225,6 +229,15 @@ public class Main {
         System.out.println("c.the string, with all vowels replaced by an underscore : " + replacedVowels.toString());
         System.out.println("d.the number of vowels in the string : " + vowelCount);
         System.out.println("e.the positions of all vowels in the string : " + (vowelPositions.length() > 0 ? vowelPositions.toString().trim() : "nothing"));
+    }
+    public static void character(String name){
+        char[] show = new char[name.length()];
+        for (int i = 0; i < name.length(); i++) {
+            show[i] = name.charAt(i);
+        }
+        for (int i = 0; i < name.length(); i++) {
+            System.out.println(show[i]);
+        }
     }
 
 }
