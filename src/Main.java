@@ -41,8 +41,16 @@ public class Main {
         System.out.println("please enter the strings : ");
         String input = scanner.nextLine();
         processString(input);
-
-
+        //E6.5
+        int[] array = new int[10];
+        System.out.println("please enter the 10 numbers of array : ");
+        for (int i = 0; i < array.length; i++) {
+            array[i] = scanner.nextInt();
+        }
+        System.out.println("the smallest of number is : " + DataSet.getSmallest(array));
+        System.out.println("the largest of number is : " + DataSet.getLargest(array));
+        System.out.println("the average of numbers is : " + DataSet.getAverage(array));
+        DataSet.getRange(array);
     }
     public static void earth(double weight , double height){
         final double g = 9.8d ;
