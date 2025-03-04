@@ -56,6 +56,8 @@ public class Main {
         binary();
         //E6.16
         Table();
+        //E6.18
+        star();
     }
     public static void earth(double weight , double height){
         final double g = 9.8d ;
@@ -263,6 +265,29 @@ public class Main {
                 System.out.print(i*j + "\t");
             }
             System.out.print("\n");
+        }
+    }
+    public static void star(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter the number : ");
+        int y = scanner.nextInt();
+        for (int i = 1; i <= y; i++) {
+            for (int j = i; j < y; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int i = y - 1; i >= 1; i--) {
+            for (int j = y; j > i; j--) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= (2 * i - 1); j++) {
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
