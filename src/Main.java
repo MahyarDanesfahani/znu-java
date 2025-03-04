@@ -1,7 +1,4 @@
 import java.util.Scanner;
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         System.out.println("hello world");
@@ -55,6 +52,8 @@ public class Main {
         System.out.println("please enter the world : ");
         String world = scanner.nextLine();
         character(world);
+        //E6.13
+        binary();
     }
     public static void earth(double weight , double height){
         final double g = 9.8d ;
@@ -241,6 +240,19 @@ public class Main {
         System.out.print("Reversed word: ");
         for (int i = show.length - 1; i >= 0; i--) {
             System.out.print(show[i]);
+        }
+    }
+    public static void binary(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("please enter the number : ");
+        int x = scanner.nextInt();
+        while (x!=0){
+            if (x%2==0){
+                System.out.println("\n0");
+            }else {
+                System.out.println("\n1");
+            }
+            x/=2 ;
         }
     }
 }
