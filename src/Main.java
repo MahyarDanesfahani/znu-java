@@ -54,6 +54,8 @@ public class Main {
         character(world);
         //E6.13
         binary();
+        //E6.16
+        Table();
     }
     public static void earth(double weight , double height){
         final double g = 9.8d ;
@@ -128,7 +130,7 @@ public class Main {
         System.out.println(third);
 
     }
-    public static  void sum100(){
+    public static void sum100(){
         int sum = 0;
         for(int i=2 ; i <= 100 ; i++){
             if ( i % 2 == 0){
@@ -137,7 +139,7 @@ public class Main {
         }
         System.out.println("the sum of even number between 2 and 100 : " + sum);
     }
-    public static  int sumnumberodd(int number){
+    public static int sumnumberodd(int number){
         int s = 0 ;
         while (number != 0) {
             int digit = number % 10;
@@ -253,6 +255,14 @@ public class Main {
                 System.out.println("\n1");
             }
             x/=2 ;
+        }
+    }
+    public static void Table(){
+        for (int i = 1; i <= 10; i++) {
+            for (int j=1 ; j <=10 ; j++){
+                System.out.print(i*j + "\t");
+            }
+            System.out.print("\n");
         }
     }
 }
